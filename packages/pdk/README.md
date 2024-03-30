@@ -7,7 +7,7 @@ An expanded version of the Extism PDK for AssemblyScript.
 - JSON support (via [as-json](https://github.com/JairusSW/as-json))
 - Type-safe inputs and outputs
 - Macros (aka. transforms) via decorators for type-safe WASM imports and exports
-- `Result<T, E>` class as AssemblyScript does not support catching exceptions
+- `Result<T, E>` type as AssemblyScript does not support catching exceptions
 - Abort handler so that panics are caught and communicated to the host
 
 Still missing:
@@ -17,7 +17,8 @@ Still missing:
 - Type-safe config (i.e. a `config_get` wrapper)
 - Tests & documentation
 
-I imagine these would be very simple to implement now, but I've simply lost all ~~hope~~ interest in AssemblyScript.
+I imagine these would be very simple to implement now, but I've simply lost all
+~~hope~~ interest in AssemblyScript.
 
 ## Installation
 
@@ -41,7 +42,7 @@ which will transform your function at compile time to take care of type conversi
 and data transmission.
 
 ```ts
-import { Result, FnError, ok, err } from "@as-extism/pdk";
+import { Result, FnError, ok, err, Json } from "@as-extism/pdk";
 
 
 @json
@@ -90,7 +91,7 @@ export declare function runCommand(
 ): Result<ExecOutput, FnError>;
 ```
 
-Note that parameters do also support JSON here, but omitted for brevity.
+Note that parameters do also support JSON here, but are omitted for brevity.
 
 The above host function could then be used like so:
 
@@ -107,5 +108,5 @@ if (result.isOk) {
 ```
 
 `Result<T, E>` also has many helpful functions inspired by Rust's
-implementation. However do to AssemblyScripts' lack of closure support
+implementation. However due to AssemblyScripts' lack of closure support
 and poor type inference, it is not a very joyful experience using them.

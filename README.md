@@ -8,7 +8,7 @@ However it ended up as an exploration into improving the Extism AssemblyScript P
 - JSON support (via [as-json](https://github.com/JairusSW/as-json))
 - Type-safe inputs and outputs
 - Macros (aka. transforms) via decorators for type-safe WASM imports and exports
-- `Result<T, E>` class as AssemblyScript does not support catching exceptions
+- `Result<T, E>` type as AssemblyScript does not support catching exceptions
 - Abort handler so that panics are caught and communicated to the host
 
 ## Contents
