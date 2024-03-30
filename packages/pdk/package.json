@@ -1,0 +1,29 @@
+{
+  "name": "@as-extism/pdk",
+  "version": "0.0.1",
+  "type": "module",
+  "author": "Casper Lindschouw",
+  "license": "MIT",
+  "dependencies": {
+    "@extism/as-pdk": "^1.0.0",
+    "as-variant": "^0.4.1",
+    "assemblyscript": "^0.27.25",
+    "json-as": "^0.7.3",
+    "visitor-as": "^0.11.4"
+  },
+  "main": "./index.ts",
+  "ascMain": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": {
+      "default": "./index.ts",
+      "types": "./index.ts"
+    },
+    "./transform": {
+      "default": "./transform"
+    },
+    "./config": {
+      "default": "./asconfig.base.json"
+    }
+  }
+}

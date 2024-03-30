@@ -1,0 +1,18 @@
+$schema: "https://moonrepo.dev/schemas/tasks.json"
+
+fileGroups:
+  configs:
+    - "asconfig.json"
+    - "asconfig.*.json"
+  sources:
+    - "{index.ts}" # brackets used to silence the warning when missing
+    - "assembly/**/*"
+
+tasks:
+  build-assembly:
+    deps:
+      - "^:build-assembly"
+    command: "asc"
+    inputs:
+      - "@group(sources)"
+      - "@group(configs)"

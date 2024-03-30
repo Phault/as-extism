@@ -1,0 +1,20 @@
+**/node_modules
+
+# moon
+.moon/cache
+.moon/docker
+
+# The `outDir` for declarations
+lib/
+
+dist/
+
+# Build cache manifests
+*.tsbuildinfo
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+.DS_Store

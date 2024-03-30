@@ -1,0 +1,17 @@
+$schema: "https://moonrepo.dev/schemas/project.json"
+
+type: "library"
+platform: "node"
+language: "assemblyscript"
+
+tasks:
+  build-assembly:
+    deps: ["build-transform"]
+
+  build-transform:
+    command: "tsc -p transform/tsconfig.json"
+    inputs:
+      - "transform/src"
+      - "transform/tsconfig.json"
+    outputs:
+      - "transform/dist"

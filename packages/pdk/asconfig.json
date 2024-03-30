@@ -1,0 +1,9 @@
+{
+  "entries": ["./index.ts"],
+  "options": {
+    "use": ["abort=assembly/errors/abort"],
+    "transform": ["json-as/transform", "./transform"],
+    "noEmit": true,
+    "disableWarning": [235]
+  }
+}

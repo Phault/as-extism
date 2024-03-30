@@ -1,0 +1,16 @@
+$schema: "https://moonrepo.dev/schemas/tasks.json"
+
+implicitInputs:
+  - "package.json"
+
+tasks:
+  build:
+    # runs all build-* tasks for the current project
+    # hopefully moonrepo will add support for this natively at some point
+    # especially because I worry about lock issues and the output is messy
+    command: "moon run scripts:run-partial -- $project:build-*"
+    platform: "node"
+    inputs: []
+    options:
+      shell: false
+      cache: false

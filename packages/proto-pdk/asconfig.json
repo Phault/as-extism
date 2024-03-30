@@ -1,0 +1,8 @@
+{
+  "extends": "./asconfig.base.json",
+  "entries": ["./index.ts"],
+  "options": {
+    "noEmit": true,
+    "disableWarning": [235]
+  }
+}

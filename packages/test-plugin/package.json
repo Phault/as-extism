@@ -1,0 +1,11 @@
+{
+  "name": "@as-extism/test-plugin",
+  "private": true,
+  "version": "0.0.1",
+  "author": "Casper Lindschouw",
+  "license": "MIT",
+  "dependencies": {
+    "@as-extism/proto-pdk": "*",
+    "assemblyscript": "^0.27.25"
+  }
+}

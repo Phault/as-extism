@@ -1,0 +1,7 @@
+{
+  "extends": ["../../configs/tsconfig.assembly.json"],
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["assembly/**/*", "index.ts"]
+}

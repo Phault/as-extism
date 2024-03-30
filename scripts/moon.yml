@@ -1,0 +1,15 @@
+id: scripts
+type: "tool"
+
+workspace:
+  inheritedTasks:
+    include: []
+
+tasks:
+  run-partial:
+    command: "tsx run-partial"
+    inputs: []
+    options:
+      cache: false
+      runInCI: false
+      outputStyle: stream

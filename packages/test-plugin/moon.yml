@@ -1,0 +1,10 @@
+$schema: "https://moonrepo.dev/schemas/project.json"
+
+type: "library"
+platform: "node"
+language: "assemblyscript"
+
+tasks:
+  build-assembly:
+    outputs:
+      - "dist"

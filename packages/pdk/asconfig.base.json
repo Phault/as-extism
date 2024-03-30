@@ -1,0 +1,6 @@
+{
+  "options": {
+    "use": ["abort=~lib/@as-extism/pdk/assembly/errors/abort"],
+    "transform": ["json-as/transform", "./transform"]
+  }
+}
